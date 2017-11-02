@@ -52,7 +52,7 @@ module.exports = function style(gd, cd) {
 
             if('mc' in d) fillColor = d.mcc = markerScale(d.mc);
             else if(Array.isArray(marker.color)) fillColor = Color.defaultLine;
-            else fillColor = marker.color;
+            else fillColor = marker.color || 'rgba(0,0,0,0)';
 
             p.style('stroke-width', lineWidth + 'px')
                 .call(Color.fill, fillColor);
