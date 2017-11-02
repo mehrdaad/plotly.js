@@ -830,7 +830,7 @@ describe('Test select box and lasso per trace:', function() {
                         [0.53, 0.53, -0.02, -0.02, 0.53]
                     ]);
                 },
-                null, LASSOEVENTS, 'bar lasso'
+                [200, 200], LASSOEVENTS, 'bar lasso'
             );
         })
         .then(function() {
@@ -847,7 +847,7 @@ describe('Test select box and lasso per trace:', function() {
                     ]);
                     assertRanges([[4.87, 5.22], [0.31, 0.53]]);
                 },
-                null, BOXEVENTS, 'bar select'
+                [200, 200], BOXEVENTS, 'bar select'
             );
         })
         .catch(fail)
